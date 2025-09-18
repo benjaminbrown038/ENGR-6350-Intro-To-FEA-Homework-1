@@ -15,3 +15,5 @@ def N1D(xi, nn):
         raise ValueError('Only 2-node or 3-node elements supported')
     
     return N
+
+
