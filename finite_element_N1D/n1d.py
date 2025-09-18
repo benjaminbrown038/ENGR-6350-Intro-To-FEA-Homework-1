@@ -1,3 +1,5 @@
+import numpy as np
+
 def N1D(xi, nn):
     """
     N1D: Shape functions for 1D element
@@ -13,7 +15,5 @@ def N1D(xi, nn):
         N = [xi * (xi - 1) / 2, 1 - xi**2, xi * (xi + 1) / 2]
     else:
         raise ValueError('Only 2-node or 3-node elements supported')
-    
+
     return N
-
-
